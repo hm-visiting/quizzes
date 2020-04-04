@@ -4,84 +4,84 @@ var questions = [
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Если присмотреться, маленькая буква G справа выдает продукцию мануфактуры Гобеленов.",
-    "image": "data/img/гобелен1.png"
+    "image": "data/img/preview_гобелен1.png"
   },
   {
     "answer": true,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Три золотые лилии на синем фоне под короной — этот знак французской королевской власти имела право размещать на своих коврах только Королевская мнуфактура Гобеленов.",
-    "image": "data/img/гобелен2.png"
+    "image": "data/img/preview_гобелен2.png"
   },
   {
     "answer": true,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Переплетающиеся буквы L -  вензель французского короля Людовика XIV — нередко размещались на гобеленах второй половины XVII века.",
-    "image": "data/img/гобелен3.png"
+    "image": "data/img/preview_гобелен3.png"
   },
   {
     "answer": true,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Российской двуглавый орел на раме не должен вводить в заблуждение. Он напоминает о том, что шпалера «Кресница фей» была приподнесена французским правительством российскому императору Николаю II по случаю его коронации. А изготовлен этот ковер на мануфактуре Гобеленов, о чем говорит буква G в углу рамы.",
-    "image": "data/img/гобелен5.png"
+    "image": "data/img/preview_гобелен5.png"
   },
   {
     "answer": true,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Французская королевская лилия, вытканная в углу обрамления, позволяет без труда отличить продукцию Королевской мануфактуры Гобеленов.",
-    "image": "data/img/гобелен6.png"
+    "image": "data/img/preview_гобелен6.png"
   },
   {
     "answer": true,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Солнце и французская лилия  отличают продукцию мануфактуры Гобеленов времен короля-Солнца Людовика XIV.",
-    "image": "data/img/гобелен7.png"
+    "image": "data/img/preview_гобелен7.png"
   },
   {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Переплетающиеся буквы EP — вензель российской императрицы Елизаветы Петровны — подсказывают, что перед нами русская шпалера XVIII века.",
-    "image": "data/img/не гобелен1.png"
+    "image": "data/img/preview_не гобелен1.png"
   },
   {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Уплощенное пространство и фигуры, расположенные в несколько ярусов — такие композиции типичны для фламандских ковров XVI  века — за столетие до основания мануфактуры Гобеленов",
-    "image": "data/img/не гобелен2.png"
+    "image": "data/img/preview_не гобелен2.png"
   },
   {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "На этом ковре нет опознавательных знаков, но тяжелые фруктовые гирлянды и пышные дамы во вкусе Рубенса выдают руку фламандского мастера XVII века.",
-    "image": "data/img/не гобелен3.png"
+    "image": "data/img/preview_не гобелен3.png"
   },
   {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Это же Мильфлёр — ковер с однотонным фоном, усеянным цветами. Такие ковры изготавливали во Франции за сотню лет до основания мануфактуры Гобеленов.",
-    "image": "data/img/не гобелен4.png"
+    "image": "data/img/preview_не гобелен4.png"
   },
 {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Хотя стиль ковра очевидно восходит к французским шпалерам эпохи Возрождения, из пространной надписи сверху мы узнаем, что это изделие английской фирмы XIX века \"William Morris & Co\", созданное по картону Эдварда Коли Бёрн-Джонса.",
-    "image": "data/img/не гобелен5.png"
+    "image": "data/img/preview_не гобелен5.png"
   },
 {
     "answer": false,
     "descriptionTrue": "Правильно",
     "descriptionFalse": "Неправильно",
     "description": "Буквы BB в нижней части бюрдюра означают \"Брюссель.Брабант\" и напоминают о том, что перед нами фламандская шпалера.",
-    "image": "data/img/не гобелен6.png"
+    "image": "data/img/preview_не гобелен6.png"
   }
 ];
 questions.sort(() => Math.random() - 0.5);

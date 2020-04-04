@@ -9,6 +9,15 @@ body div {
   text-align: center;
   width: 90%;
   max-width: 600px;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif;
+}
+
+h1 {
+  font-family: Museo,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif;
+  font-size: 38px;
+  font-weight:700;
+  color:#222;
+  line-height:41px;
 }
 
 .button-container {
@@ -33,6 +42,10 @@ body div {
   display: inline-block;
   cursor:pointer;
 }
+
+.button:hover {
+  background-color: #429945;
+}
 #main-image {
   width: 100%;
 }
@@ -55,6 +68,7 @@ body div {
 		<h1 id="main-header">Это гобелен?</h1>
 		<div id="image">
 			<img id="main-image"/></div>
+			<!-- <img id="loading-image" src="data/img/loading.svg"/></div> -->
 		<div class="button-container">
     <div  class="button" id="button-true" onclick="onAnswerClick(true)">Да</div>
     <div class="space"></div>
