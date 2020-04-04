@@ -12,26 +12,43 @@ const nextDiv = document.getElementById("next");
 const resultDiv = document.getElementById("result");
 const header = document.getElementById("main-header");
 
+var showElement = function(element) {
+  element.classList.remove("invisible");
+}
+
+var hideElement = function(element) {
+  element.classList.add("invisible");
+}
+
 var renderQuestion = function() {
-  header.classList.remove("invisible");
-  answerDiv.classList.add("invisible");
-  questionImage.classList.remove("invisible");
-  trueButton.classList.remove("invisible");
-  falseButton.classList.remove("invisible");
+  showElement(header);
+  showElement(trueButton);
+  showElement(falseButton);
+
+  hideElement(answerDiv);
+  hideElement(answerDiv);
+  hideElement(nextDiv);
+
   questionImage.src = questions[currentQuestion].image;
-  questionImage.on
-  answerDiv.classList.add("invisible");
-  nextDiv.classList.add("invisible")
+  if(!questionImage.complete) {
+    questionImage.addEventListener(
+      'load', 
+      function() {showElement(questionImage);}
+  )} else {
+    showElement(questionImage);
+  }
 };
 
 
 var renderAnswer = function(answer) {
-  header.classList.add("invisible");
-  answerDiv.classList.remove("invisible");
-  questionImage.classList.add("invisible");
-  trueButton.classList.add("invisible");
-  falseButton.classList.add("invisible");
-  nextDiv.classList.remove("invisible");
+  showElement(answerDiv);
+  showElement(nextDiv);
+
+  hideElement(header);
+  hideElement(questionImage);
+  hideElement(trueButton);
+  hideElement(falseButton);
+
   var q = questions[currentQuestion];
   var ans = (answer ? q.descriptionTrue : q.descriptionFalse) + "<p class=\"answer-detail\">" + q.description + "</p>";
    
@@ -40,13 +57,14 @@ var renderAnswer = function(answer) {
 
 
 var renderResult = function() {
-  header.classList.add("invisible");
-  answerDiv.classList.add("invisible");
-  questionImage.classList.add("invisible");
-  trueButton.classList.add("invisible");
-  falseButton.classList.add("invisible");
-  nextDiv.classList.add("invisible");
-  resultDiv.classList.remove("invisible");
+  hideElement(header);
+  hideElement(answerDiv);
+  hideElement(questionImage);
+  hideElement(trueButton);
+  hideElement(falseButton);
+  hideElement(nextDiv);
+
+  showElement(resultDiv);
 
   resultDiv.innerHTML = "Правильных ответов: " + 
     answers.reduce(((acc, curr) => acc + curr), 0) + 
