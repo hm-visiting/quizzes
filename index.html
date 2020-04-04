@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+
+body div {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  max-width: 70%;
+  padding-top: 1em;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border-radius: 3em;
+  max-width: 100px;
+  border: none;
+  color: white;
+  padding: 1em 1em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  cursor:pointer;
+}
+#main-image {
+  width: 100%;
+}
+
+.invisible {
+  display: none !important;
+}
+
+@media screen and (max-width: 320px){
+   .button {
+     font-size: 11px;
+   }
+}
+
+</style>
+</head>
+<body>
+		<div>
+
+		<h1 id="main-header">Это гобелен?</h1>
+		<div id="image">
+			<img id="main-image"/></div>
+		<div class="button-container">
+    <div  class="button" id="button-true" onclick="onAnswerClick(true)">Да</div>
+    <div class="space"></div>
+    <div  class="button" id="button-false" onclick="onAnswerClick(false)">Нет</div>
+    </div>
+
+		<div  id="answer"></div>
+		<div class="button-container">
+    <div  class="button" id="next" onclick="onStepClick()">Дальше</div>
+    </div>
+		<div  id="result"></div>
+</div>
+<script src="data.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
